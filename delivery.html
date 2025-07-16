@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product - Wenky Fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="delivery.css" />
+</head>
+<body>
+
+  <header>
+    <div class="left-icons">
+      <span class="hamburger" onclick="history.back()">←</span>
+    </div>
+    <div class="right-icons">
+      <span class="cart-icon" onclick="window.location.href='cart.html'">🛒</span>
+      <span class="login-icon" onclick="window.location.href='profile.html'">👤</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="delivery-container">
+      <h2>Delivery Details 🚚</h2>
+  
+      <div class="product-info" id="productInfo">
+        <!-- Product info loads here -->
+      </div>
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" min="1" value="1" />
+      <input type="text" id="name" placeholder="Full Name" />
+      <input type="tel" id="phone" placeholder="Phone Number" />
+      <textarea id="address" rows="3" placeholder="Enter full delivery address"></textarea>
+      <input type="text" id="city" placeholder="City" />
+      <input type="text" id="state" placeholder="State" />
+      <input type="text" id="pin" placeholder="PIN Code" />
+  
+      <button onclick="confirmOrder()">Place Order</button>
+    </section>
+  </main>
+
+  <script type="module" src="delivery.js"></script>
+</body>
+</html>

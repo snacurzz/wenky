@@ -1,0 +1,43 @@
+.delivery-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.delivery-container input,
+.delivery-container textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.delivery-container button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.delivery-container button:hover {
+  background-color: #222;
+}
+
+.delivery-container h2 {
+  margin-top: 0;
+}
+
+.product-info {
+  margin-bottom: 1rem;
+}

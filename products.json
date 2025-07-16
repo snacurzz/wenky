@@ -1,0 +1,23 @@
+[
+  {
+    "id": "oversized-hoodie",
+    "name": "Oversized Hoodie",
+    "price": 999,
+    "image": "hoodie.jpg",
+    "description": "Soft, cozy, and perfect for chill days..."
+  },
+  {
+    "id": "denim-jacket",
+    "name": "Denim Jacket",
+    "price": 1299,
+    "image": "denim.jpg",
+    "description": "A timeless denim jacket that pairs..."
+  },
+  {
+    "id": "floral-skirt",
+    "name": "Floral Skirt",
+    "price": 899,
+    "image": "skirt.jpg",
+    "description": "A flowy floral skirt to embrace your soft feminine vibe. Perfect for spring and summer days."
+  }
+]
