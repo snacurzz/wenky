@@ -19,10 +19,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
-
 // Login with Google
 const loginBtn = document.getElementById('login-btn');
 const loginBtns = document.getElementById('login-btns');
+const profileIcon = document.getElementById('profile-icon');
 
 if (loginBtn) {
   loginBtn.addEventListener('click', () => {
@@ -39,17 +39,6 @@ if (loginBtn) {
 
 onAuthStateChanged(auth, (user) => {
   if (user && loginBtns) {
-    loginBtns.style.display = 'none';
-  }
-});
-
-// Go to profile
-window.goToProfile = () => {
-  window.location.href = 'profile.html';
-};
-
-onAuthStateChanged(auth, (user) => {
-  if (user && loginBtns) {
     loginBtns.innerHTML = `
       <p style="color: white;">Welcome, ${user.displayName} 👋</p>
       <button id="explore-btn">Explore Wenky</button>
@@ -60,4 +49,13 @@ onAuthStateChanged(auth, (user) => {
       window.location.href = 'home.html';
     });
   }
+
+  if (user && profileIcon) {
+    profileIcon.innerHTML = `<img src="${user.photoURL}" alt="Profile" style="width: 30px; height: 30px; border-radius: 50%;" />`;
+  }
 });
+
+// Go to profile
+window.goToProfile = () => {
+  window.location.href = 'profile.html';
+};
