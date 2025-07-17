@@ -6,7 +6,8 @@
 .profile-container h1 {
   font-size: 2.2rem;
   color: #111;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
 }
 
 .profile-container p {
