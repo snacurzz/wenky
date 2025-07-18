@@ -6,12 +6,12 @@ import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 
 // Your Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyD5ZWLdrORUd_hPGCEc6jFZfNmqPHWD1aU",
-  authDomain: "agendalist-9c99e.firebaseapp.com",
-  projectId: "agendalist-9c99e",
-  storageBucket: "agendalist-9c99e.appspot.com",
-  messagingSenderId: "662414426837",
-  appId: "1:662414426837:web:6d505e3e5e27a61796092e"
+  apiKey: "AIzaSyDwgvrtQEI_lMKVExy0sx7cJV0uE8HikTc",
+  authDomain: "wenky-fashion.firebaseapp.com",
+  projectId: "wenky-fashion",
+  storageBucket: "wenky-fashion.firebasestorage.app",
+  messagingSenderId: "278566676880",
+  appId: "1:278566676880:web:e24e379fcacd332a6eab15"
 };
 
 // Initialize Firebase
