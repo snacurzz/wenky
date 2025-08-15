@@ -25,6 +25,14 @@ if (!selectedProduct) {
 
 // Render product info
 const productInfoDiv = document.getElementById("productInfo");
+
+productInfoDiv.innerHTML = `
+  <img src="${selectedProduct.image}" width="100%" height="auto" alt="${selectedProduct.name}" />
+  <h3>${selectedProduct.name}</h3>
+  <p>Price per item: ₹${selectedProduct.price}</p>
+  <p>Total: ₹<span id="totalPrice"></span></p>
+`;
+
 const totalPriceEl = document.getElementById("totalPrice");
 const quantityInput = document.getElementById("quantity");
 
@@ -35,13 +43,6 @@ function updateTotal() {
   }
 }
 quantityInput.addEventListener("input", updateTotal);
-
-productInfoDiv.innerHTML = `
-  <img src="${selectedProduct.image}" width="100%" height="auto" alt="${selectedProduct.name}" />
-  <h3>${selectedProduct.name}</h3>
-  <p>Price per item: ₹${selectedProduct.price}</p>
-  <p>Total: ₹<span id="totalPrice">${selectedProduct.price}</span></p>
-`;
 
 updateTotal();
 
