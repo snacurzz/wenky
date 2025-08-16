@@ -54,7 +54,7 @@
   }
 }
 
-.auth-section button {
+.auth-section #login-btn {
   background: var(--orange);
   color: white;
   border: none;
@@ -66,7 +66,7 @@
   animation: login 3.5s linear infinite;
 }
 
-.auth-section button:active {
+.auth-section #login-btn:active {
   background: linear-gradient(to right, var(--orange), #FF993A, #FFA95B, #FFC38C, #FFDFC1, #FFECDC);
   animation: none;
 }
